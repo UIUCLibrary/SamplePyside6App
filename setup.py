@@ -11,5 +11,10 @@ setup(
     description='Just a sample pyside6 app for testing',
     install_requires="pyside6",
     include_package_data=True,
-    package_data={"hellopyside6": ['main.qml']}
+    package_data={"hellopyside6": ['main.qml']},
+    entry_points={
+           "gui_scripts": [
+               'hellopyside6 = hellopyside6.__main__:main',
+           ],
+       },
 )

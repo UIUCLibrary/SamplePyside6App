@@ -9,8 +9,6 @@ except ImportError:
 
 
 def main():
-    print("hjer")
-
     app = QGuiApplication(sys.argv)
 
     engine = QQmlApplicationEngine()
