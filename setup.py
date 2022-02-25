@@ -9,5 +9,7 @@ setup(
     author='hborcher',
     author_email='',
     description='Just a sample pyside6 app for testing',
-    install_requires="pyside6"
+    install_requires="pyside6",
+    include_package_data=True,
+    package_data={"hellopyside6": ['main.qml']}
 )
